@@ -1,0 +1,6160 @@
+    
+
+    <script>
+        
+      function getVisitorID() {
+          return localStorage.getItem("visitorID");
+      }
+
+     
+      function getVisitorName() {
+          return localStorage.getItem("visitorName");
+      }
+
+     
+      const visitorID = getVisitorID();
+
+     
+      const visitorData = {
+          "9av67lbzes": "Uns MAHMOUDI",
+        "tqs1gimwgj": "" 
+         
+      };
+
+      if (visitorID && visitorData[visitorID]) {
+        
+          const welcomeMessage = "Welcome, " + visitorData[visitorID] + "!";
+          document.getElementById("welcome-message").textContent = welcomeMessage;
+      } else {
+        
+          document.getElementById("welcome-message").textContent = "Welcome, Guest!";
+      }
+  </script>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+      
+
+      buttonnn {
+          margin: 10px;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          transition: background-color 0.3s;
+      }
+
+      buttonnn:hover {
+          background-color: #2980b9;
+      }
+
+      #buttonnn-container {
+          display: flex;
+          flex-wrap: wrap; /* Allow buttonnns to wrap to the next line on smaller screens */
+          justify-content: center;
+          margin-bottom: 20px;
+      }
+
+      iframe {
+         
+          width: 100%;
+          height: 850px;
+      }
+
+      @media screen and (max-width: 600px) {
+          /* Adjust styles for screens with a maximum width of 600px */
+          buttonnn {
+              width: 100%; /* Make buttonnns full width */
+          }
+
+          iframe {
+              width: 100%; /* Make iframes full width */
+          }
+      }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+        
+        details[open] summary ~ * {
+animation: sweep .1s ease-in-out;
+}
+@keyframes sweep {
+0%    {opacity: 0; margin-top: -10px}
+100%  {opacity: 1; margin-top: 0px}
+}
+summary {
+font-size: 1.25rem;
+font-weight: 600;
+background-color: #204ecf;
+color: white;
+padding: 1rem;
+margin-bottom: 1rem;
+outline: none;
+border-radius: 0.25rem;
+text-align: left;
+cursor: pointer;
+position: relative;
+}
+details > summary::after {
+position: absolute;
+content: "+";
+right: 20px;
+}
+details[open] > summary::after {
+position: absolute;
+content: "-";
+right: 20px;
+}
+details > summary::-webkit-details-marker {
+display: none;
+}
+
+      </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+      /* Style for the accordion container */
+      .accordion1-container {
+          max-width: 100%;
+          margin: 10px;
+          padding: 10px;
+      }
+
+      /* Style for the accordion */
+      .accordion1 {
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          max-width: 100%;
+      }
+
+      .accordion1-item {
+          border-top: 1px solid #ddd;
+      }
+
+      .accordion1-item:last-child {
+          border-bottom: 1px solid #ddd;
+      }
+
+      .accordion1-header {
+          padding: 10px;
+          cursor: pointer;
+          background-color: #f5f5f5;
+          font-weight: bold;
+          position: relative;
+          user-select: none;
+          /* Disable text highlight */
+      }
+
+      .accordion1-header::after {
+          content: "";
+          /* Default down arrow */
+          position: absolute;
+          right: 10px;
+      }
+
+      .accordion1-header.active::after {
+          content: "";
+          /* Up arrow when active (open) */
+      }
+
+      .accordion1-content {
+          padding: 10px;
+          display: none ;
+          /* Initially set to none */
+      }
+
+      .accordion1-btn {
+   
+          padding: 10px;
+  background-color: red;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+        
+       
+      }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+html .cog-branding--minimal, html .cog-branding--minimal *, :root:root:root:root:root .cog-branding--minimal, :root:root:root:root:root .cog-branding--minimal * {
+  display: none;
+  position: static !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) translateX(0) translateY(0) !important;
+}
+html .cog-abuse ul, :root:root:root:root:root .cog-abuse ul {
+  display: none;
+  margin: 0;
+  padding: 10px 0 0;
+  font-size: 11px;
+  text-align: center;
+}
+html .cog-cognito hr, :root:root:root:root:root .cog-cognito hr {
+  border: 0;
+  border-bottom: var(--border-width) hsla(var(--background-hsl), 0.6) var(--input__border-style);
+  display: none;
+}
+
+article table td {
+  padding: 20px 25px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-left-width: 0;
+  border-top: 0;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+display:none
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #204ecf;
+color: white;
+text-align: center;
+head-color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+button {
+  background-color: #204ecf;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  padding: 11px 25px;
+  margin-top: 4px;
+  border-radius: 30px;
+  word-spacing: 10px;
+  cursor: pointer
+}
+
+article.post h1, article.post h2, article.post h3, article.post h4, article.post h5, article.post h6 {
+  margin: 1.7em 0 20px;
+  font-weight: 700;
+  line-height: 1.4em;
+
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+.hero1 {
+  background-color: transparent;
+  margin-right: -29px;
+  display: none;
+}
+
+
+
+
+.hero2 {
+  background-color: transparent;
+  margin-right: -29px;
+  display: none;
+}
+
+
+
+
+
+  h6 {
+font-size: 40px;
+text-align: center;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 9px 20px 5px rgb(0 0 0 / 12%);
+}
+
+
+
+
+
+
+
+.btnn {
+text-align-last: center;
+}
+
+
+
+
+article.post .postTitle {
+  font-size: ;
+  line-height: 1.4em;
+  text-align: center;
+  margin-bottom: -25px;
+  background-color: #003399;
+  color: white;
+  box-shadow: 0px 7px 20px 0px rgb(0 0 0 / 77%);
+  border-radius: 10px;
+}
+.tawk-branding {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+.color {
+  color: #00adef;
+}
+.onPage .blogContent .mainbar {
+  max-width: -webkit-fill-available;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Blog .breadcrumbs {
+  display: none;
+  align-items: center;
+  margin-bottom: 5px;
+  line-height: 1.8em;
+  font-size: 70%;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -304px;
+}
+article.post .postEntry img {
+  display: inline-block;
+  border-radius: 2px;
+  height: auto !important;
+  pointer-events: none;
+}
+</style>
+
+
+
+<div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="168" data-original-width="518" height="173" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhup8UZcqnAiLdKKoxZx7Ctb9U-WZhoTvgJL3CEiuEJ9tKGtDuGz2wHo_4nYcZ8aYdbjSogx1yMGHONaX3UXzcDz6Rv5hmeZphn3OQ92RzJ8Xzt8mNgXqrUGPqrYKwKiz-E9Zo_RF2AFSHHwfa02L0w_dUo3JuhP6nJyWfyPahMpv6gW2qVU8IplmrmCpU/s16000/b111.png" width="521" style="
+  margin-bottom: 163px;
+">width="521" /></a></div><div class="separator" style="clear: both; text-align: center;" unselectable="on"><br /></div><p></p></div><p></p>
+
+<div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; text-align: center;"><br /></div><br /><br /></div><br /><br /><br /><html>
+  <head>
+      <style type="text/css">
+          body {
+background: transparent;
+font-family: "Lato", sans-serif;
+}
+
+h2 {
+color: #000;
+text-align: center;
+font-size: 2em;
+margin: 20px 0;
+}
+
+.warpper {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.tab {
+cursor: pointer;
+padding: 10px 20px;
+margin: 6px 2px;
+background: #003399;
+display: inline-block;
+color: #fff;
+border-radius: 3px 3px 0px 0px;
+box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+.panels {
+background: transparent;
+
+min-height: 200px;
+width: 100%;
+max-width: 1500px;
+border-radius: 3px;
+overflow: hidden;
+
+}
+
+.panel {
+display: none;
+animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+.panel-title {
+font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+}
+
+.radio {
+display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel, 
+#five:checked ~ .panels #five-panel,
+#six:checked ~ .panels #six-panel,
+#seven:checked ~ .panels #seven-panel,
+        #nine:checked ~ .panels #nine-panel,
+#eight:checked ~ .panels #eight-panel { 
+
+
+display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab,
+#seven:checked ~ .tabs #seven-tab,  
+        #nine:checked ~ .tabs #nine-tab,
+#eight:checked ~ .tabs #eight-tab {
+
+background: #fff;
+color: #000;
+border-top: 3px solid #32557f;
+}
+      </style>
+  </head>
+  <body>
+      <h2></h2>
+<div class="warpper">
+<input checked="" class="radio" id="one" name="group" type="radio" />
+<input class="radio" id="two" name="group" type="radio" />
+<input class="radio" id="three" name="group" type="radio" />
+<input class="radio" id="four" name="group" type="radio" />
+<input class="radio" id="five" name="group" type="radio" />
+<input class="radio" id="six" name="group" type="radio" />
+<input class="radio" id="seven" name="group" type="radio" />
+<input class="radio" id="eight" name="group" type="radio" />
+<input class="radio" id="nine" name="group" type="radio" />
+
+
+
+
+
+
+<div class="tabs">
+  <label class="tab" for="one" id="one-tab">About Level</label>
+  <label class="tab" for="two" id="two-tab">Units</label>
+  <label class="tab" for="three" id="three-tab">Updates</label>
+  <label class="tab" for="four" id="four-tab">Schedule</label>
+ 
+  <label class="tab" for="five" id="five-tab">Students list</label>
+  <label class="tab" for="six" id="six-tab">Homework</label>
+   <label class="tab" for="eight" id="eight-tab">Tools</label>
+  <label class="tab" for="seven" id="seven-tab">Pronunciation</label>
+  <label class="tab" for="nine" id="nine-tab">Payment</label>
+
+  
+</div>
+
+<div class="panels">
+  <div class="panel" id="one-panel">
+    <div class="panel-title"></div>
+    <p><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">ABOUT  B1    LEVEL</span></b></h4>
+
+<p align="center" class="MsoNormal" style="line-height: normal; margin-top: 12pt; text-align: center;"><span face="&quot;Arial&quot;,sans-serif" style="color: #23085a; font-size: 24pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Understanding your
+English level</span><b><span style="color: red; font-family: &quot;Times New Roman&quot;,serif; font-size: 22pt; mso-ascii-theme-font: major-bidi; mso-bidi-theme-font: major-bidi; mso-hansi-theme-font: major-bidi;"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="background: transparent; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">The Common European
+Framework of Reference for Languages (<b>CEFR</b>) is the system that defines
+and explains the different levels of oral and written expression and
+comprehension for languages, including English.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="background: transparent; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">There are six levels of
+reference, divided into three blocks: basic user for levels A1 and A2,
+independent user for B1 and B2 and proficient user for C1 and C2.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="background: transparent; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">English level <b><i>B1</i></b>
+describes independent users of the language. Learners at this level can
+communicate with other English speakers.</span></p><p class="MsoNormal" style="background: transparent; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"></p><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsJvZTXYrCfpcYnnlZTjVxITE1CNibjH2w4fx_pMV-TEF2kI6FkSFpvahSa7gYU-KEjUuPmC1vnXr9zQn4rjiukfELpZlTWRrT37stzclGDhtMsSaPKvBvxvGm17y_oUQithc69ALQka9QqEzi-mLRjDlzPigs2xpyP-5odKAu5MnKoXmZh5aVZJ3R/s1090/image.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="597" data-original-width="1090" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsJvZTXYrCfpcYnnlZTjVxITE1CNibjH2w4fx_pMV-TEF2kI6FkSFpvahSa7gYU-KEjUuPmC1vnXr9zQn4rjiukfELpZlTWRrT37stzclGDhtMsSaPKvBvxvGm17y_oUQithc69ALQka9QqEzi-mLRjDlzPigs2xpyP-5odKAu5MnKoXmZh5aVZJ3R/s16000/image.png" /></a></div><div class="separator" style="clear: both; text-align: center;"><b><span style="color: #23085a; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><br /></span></b></div><div class="separator" style="clear: both; text-align: center;"><b><span style="color: #23085a; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Skills at B1 English level (intermediate)</span></b></div><p></p><p class="MsoNormal" style="background: white; line-height: 115%; mso-margin-bottom-alt: auto; mso-margin-top-alt: auto; text-align: justify;"><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 115%;">English level B1 is the third level of English
+in the Common European Framework of Reference (CEFR), a definition of different
+language levels written by the Council of Europe. In everyday speech, this
+level would be called “intermediate”, and indeed, that is the official level
+descriptor in the CEFR. At this level, students are beyond the basics but they
+are still not able to work or study exclusively in English.<o:p></o:p></span></p><p align="center" class="MsoNormal" style="background: transparent; line-height: 115%; mso-margin-bottom-alt: auto; mso-margin-top-alt: auto; text-align: center;"><b><span style="color: #23085a; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;;">What can you do with a
+B1 level in English?</span></b><b><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 115%;"><o:p></o:p></span></b></p><p class="MsoNormal" style="line-height: 115%; text-align: justify;"><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 115%;">A B1 level of English
+would be sufficient for interactions with English speakers on familiar topics.
+In the workplace, people at a B1 level of English are able to read simple
+reports on familiar topics and write simple e-mails on subjects in their field.
+However, a B1 level is not adequate to function fully in the workplace in
+English.&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="line-height: 150%;"><b><span style="color: #23085a; font-family: &quot;Arial&quot;,sans-serif; font-size: 14.0pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">According to the official CEFR guidelines, someone at the B1
+level in English:<o:p></o:p></span></b></p><ul type="disc">
+<li class="MsoNormal" style="line-height: 150%;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Can understand the main points
+   of clear standard input on familiar matters regularly encountered in work,
+   school, leisure, etc.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Can deal with most situations
+   likely to arise whilst travelling<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Can produce simple connected
+   text on topics which are familiar or of personal interest.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; mso-list: l0 level1 lfo1; mso-margin-bottom-alt: auto; mso-margin-top-alt: auto; tab-stops: list .5in;"><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 150%;">Can describe
+   experiences and events, dreams, hopes and ambitions and briefly give
+   reasons and explanations for opinions and plans</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; line-height: 150%; mso-ascii-theme-font: major-bidi; mso-bidi-theme-font: major-bidi; mso-hansi-theme-font: major-bidi;">.<o:p></o:p></span></li>
+</ul><p align="center" class="MsoNormal" style="line-height: 150%; margin-bottom: 0in; text-align: center;"><b><span style="color: #23085a; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">B1
+level English skills in details<o:p></o:p></span></b></p><p class="MsoNormal" style="line-height: 150%; margin-bottom: 0in; mso-margin-top-alt: auto; text-align: justify;"><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 150%;">&nbsp;A student at the B1 level
+in English will be able to do all the things that a student in level A2 can do,
+and in addition he will be able to:<o:p></o:p></span></p><ul type="disc">
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Discuss your personal and
+   professional hopes and dreams for the future.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Arrange
+   a job interview and interview for a job in your area of expertise.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Talk
+   about your television viewing habits and favorite programs.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Describe
+   your education and your plans for future training.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Talk
+   about your favorite music and music trends and plan a night out to listen
+   to live music.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Talk
+   about maintaining a healthy lifestyle and give and get advice about
+   healthy habits.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Talk
+   about relationships and dating, including meeting people through social
+   media.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Go
+   to a restaurant, order food, engage in polite dinner conversation and pay
+   for your food.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Participate
+   in negotiations in your area of expertise, if you have help understanding
+   some points.<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: 150%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 150%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Discuss
+   workplace safety issues, report an injury and explain rules and
+   regulations.<o:p></o:p></span></li>
+</ul><p class="MsoNormal" style="line-height: 115%; margin-left: .5in; mso-list: l0 level1 lfo1; mso-margin-bottom-alt: auto; mso-margin-top-alt: auto; tab-stops: list .25in; text-align: justify; text-indent: -.25in;"><!--[if !supportLists]--><span style="font-family: Symbol; font-size: 10pt; line-height: 115%;">·<span style="font-family: &quot;Times New Roman&quot;; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span dir="LTR"></span><span style="font-family: Arial, sans-serif; font-size: 13.5pt; line-height: 115%;">Discuss polite behavior and respond appropriately
+to impolite behavior.<o:p></o:p></span></p><ul type="disc">
+<li class="MsoNormal" style="line-height: 115%; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;;">Although
+   progress will depend on the type of course and the individual student,
+   students can expect to reach the B1 level in English with 400 hours of
+   cumulative instruction.<o:p></o:p></span></li>
+</ul><h4 align="center" style="background: #000066; text-align: center;"><b><span style="color: white; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 107%;">English Communication</span></b><span style="color: #000066; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 107%;"><o:p></o:p></span></h4><ul type="disc">
+<li class="MsoNormal" style="background: white; line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Describing
+   experiences and events<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Expressing hopes and ambitions<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Describing feelings<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Giving reasons<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Giving opinions<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Expressing preferences<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Stating obligations<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Expressing certainty<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Describing events in the past<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Describing events in the future<o:p></o:p></span></li>
+</ul><h4 align="center" style="background: #000066; text-align: center;"><b><span style="color: white; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 107%;">English Vocabulary<o:p></o:p></span></b></h4><ul type="disc">
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Feelings and emotions<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Travel and transport<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Entertainment<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Leisure activities<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Sport, health and fitness<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Education<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">News and media<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Technology<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Time expressions for the past<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Time expressions for the future<o:p></o:p></span></li>
+</ul><h4 align="center" style="background: #000066; text-align: center;"><b><span style="color: white; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 107%;">English Grammar<o:p></o:p></span></b></h4><p class="MsoNormal" style="background: white; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></p><ul type="disc">
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Adverbs for time, degree, manner<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Past habits and
+   states&nbsp;(used to)<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Present perfect simple<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Modals: should have, might have
+   etc<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Present
+   continuous&nbsp;(future)<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Future simple:&nbsp;will<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Future:&nbsp;going to<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Present perfect continuous<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Past continuous<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Past perfect simple<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Conditionals&nbsp;(first and
+   second)<o:p></o:p></span></li>
+<li class="MsoNormal" style="line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Future continuous<o:p></o:p></span></li>
+<li class="MsoNormal" style="background: white; line-height: normal; text-align: justify;"><span style="font-family: &quot;Arial&quot;,sans-serif; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">Passives<o:p></o:p></span></li>
+</ul><h4 align="center" style="background: #000066; text-align: center;"><b><span style="color: white; font-family: &quot;Arial&quot;,sans-serif; font-size: 18.0pt; line-height: 107%;">The CEFR&nbsp;describe&nbsp;level B1's user capable of carrying
+out the following linguistic skills</span></b></h4><div style="text-align: center;"><table align="left" border="1" cellpadding="0" cellspacing="0" class="MsoTable15Plain1" style="border-collapse: collapse; border: none; margin-left: 6.75pt; margin-right: 6.75pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-table-anchor-horizontal: margin; mso-table-anchor-vertical: margin; mso-table-left: center; mso-table-lspace: 9.0pt; mso-table-rspace: 9.0pt; mso-table-top: 24.0pt; mso-yfti-tbllook: 1184; width: 100%;">
+<tbody><tr style="height: 57.65pt; mso-yfti-firstrow: yes; mso-yfti-irow: -1; mso-yfti-lastfirstrow: yes;">
+<td style="border: solid #BFBFBF 1.0pt; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 77.4pt;" width="103">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 5; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​<br />
+​Understanding</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-left: none; border: solid #BFBFBF 1.0pt; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 94.5pt;" width="126">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 1; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><br />
+</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​​Listening</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-left: none; border: solid #BFBFBF 1.0pt; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 280.55pt;" width="374">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 1; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​I can understand the main points of clear standard
+speech on familiar matters regularly encountered in work, school, leisure,
+etc. I can understand the main point of many radio or TV programmes on
+current affairs or topics of personal or professional interest when the
+delivery is relatively slow and clear.</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="height: 84.85pt; mso-yfti-irow: 0;">
+<td style="background: #F2F2F2; border-top: none; border: solid #BFBFBF 1.0pt; height: 84.85pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 77.4pt;" width="103">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 68; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">​​Understanding</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="background: #F2F2F2; border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 84.85pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 94.5pt;" width="126">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 64; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">Reading</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+<td style="background: #F2F2F2; border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 84.85pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 280.55pt;" width="374">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 64; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">​​​I can understand
+texts that consist mainly of high frequency everyday or job-related language.
+I can understand the description of events, feelings and wishes in personal letters.</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="height: 57.65pt; mso-yfti-irow: 1;">
+<td style="border-top: none; border: solid #BFBFBF 1.0pt; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 77.4pt;" width="103">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 4; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><br />
+</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​Speaking</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 94.5pt;" width="126">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​Spoken interaction</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+<td style="border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 57.65pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 280.55pt;" width="374">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​I can deal with most situations likely to arise whilst
+travelling in an area where the language is spoken. I can enter unprepared
+into conversation on topics that are familiar, of personal interest or
+pertinent to everyday life (e.g. family, hobbies, work, travel and current
+events).</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="height: 59.1pt; mso-yfti-irow: 2;">
+<td style="background: #F2F2F2; border-top: none; border: solid #BFBFBF 1.0pt; height: 59.1pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 77.4pt;" width="103">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 68; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;"><br />
+</span></b><b><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">​​Speaking</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="background: #F2F2F2; border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 59.1pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 94.5pt;" width="126">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 64; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">​​Spoken production</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+<td style="background: #F2F2F2; border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 59.1pt; mso-background-themecolor: background1; mso-background-themeshade: 242; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 280.55pt;" width="374">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 64; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 10pt;">​​​I can connect
+phrases in a simple way in order to describe experiences and events, my
+dreams, hopes and ambitions. I can briefly give reasons and explanations for
+opinions and plans. I can narrate a story or relate the plot of a book or
+film and describe my reactions.</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="height: 44.25pt; mso-yfti-irow: 3; mso-yfti-lastrow: yes;">
+<td style="border-top: none; border: solid #BFBFBF 1.0pt; height: 44.25pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-themecolor: background1; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 77.4pt;" width="103">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; mso-yfti-cnfc: 4; text-align: center;"><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​Writing</span></b><b><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 44.25pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 94.5pt;" width="126">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​Writing</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+<td style="border-bottom: solid #BFBFBF 1.0pt; border-left: none; border-right: solid #BFBFBF 1.0pt; border-top: none; height: 44.25pt; mso-border-alt: solid #BFBFBF .5pt; mso-border-bottom-themecolor: background1; mso-border-bottom-themeshade: 191; mso-border-left-alt: solid #BFBFBF .5pt; mso-border-left-themecolor: background1; mso-border-left-themeshade: 191; mso-border-right-themecolor: background1; mso-border-right-themeshade: 191; mso-border-themecolor: background1; mso-border-themeshade: 191; mso-border-top-alt: solid #BFBFBF .5pt; mso-border-top-themecolor: background1; mso-border-top-themeshade: 191; padding: 0in 5.4pt 0in 5.4pt; width: 280.55pt;" width="374">
+<p align="center" class="MsoNormal" style="line-height: 15.0pt; margin-bottom: 15.0pt; mso-element-anchor-horizontal: margin; mso-element-frame-hspace: 9.0pt; mso-element-left: center; mso-element-top: 24.0pt; mso-element-wrap: around; mso-element: frame; mso-height-rule: exactly; text-align: center;"><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">​​​I can write simple connected text on topics which are
+familiar or of personal interest. I can write personal letters describing
+experiences and impressions.</span><span style="font-family: &quot;Times New Roman&quot;,serif; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody></table></div><p class="MsoNormal" style="background: white; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"></span></p><div class="separator" dir="rtl" style="clear: both; text-align: center;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><br /></span></div><p></p><p class="MsoNormal" style="background: white; line-height: normal; margin-bottom: 9.4pt; text-align: justify;"><span face="&quot;Arial&quot;,sans-serif" style="color: black; font-size: 13.5pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><br /></span></p>
+  
+  </div>
+  
+  
+  <div class="panel" id="two-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">UNITS</span></b></h4></div>
+    
+    <p>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab1 */
+.tab1 {
+overflow: hidden;
+background-color: transparent;
+}
+
+/* Style the buttons inside the tab1 */
+.tab1 button {
+background-color: #204ecf;
+float: left;
+border: outset;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+color: white;
+margin-inline: 2px;
+margin-bottom: 3px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Create an active/current tablink class */
+.tab1 button.active {
+background-color: #ccc;
+color: black;
+}
+
+/* Style the tab1 content */
+.tab1content {
+display: none;
+padding: 6px 12px;
+
+border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+<p>Select a unit to view the course details:</p>
+
+<div class="tab1">
+<button class="tab1links" onclick="openCity(event, 'Unit 1')">Unit 1</button>
+<button class="tab1links" onclick="openCity(event, 'Unit 2')">Unit 2</button>
+<button class="tab1links" onclick="openCity(event, 'Unit 3')">Unit 3</button>
+<button class="tab1links" onclick="openCity(event, 'Unit 4')">Unit 4</button>
+ <button class="tab1links" onclick="openCity(event, 'Unit 5')">Unit 5</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 6')">Unit 6</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 7')">Unit 7</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 8')">Unit 8</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 9')">Unit 9</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 10')">Unit 10</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 11')">Unit 11</button>
+  <button class="tab1links" onclick="openCity(event, 'Unit 12')">Unit 12</button>
+
+
+
+  <button class="tab1links" onclick="redirectToCustomURL()">Vocabulary</button>
+</div>
+
+<script>
+function redirectToCustomURL() {
+  // Open the custom URL in a new tab
+  window.open("https://www.unsclass.tk/p/444444444444444444444444444444444444444.html", "_blank");
+}
+</script>
+
+
+
+
+
+
+
+
+
+<div>
+<p style="text-align: right;"><span><button3 id="toggleAll" class="accordion1-btn">Collapse All</button3></span></p>
+</div>
+
+<div class="tab1content" id="Unit 1">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 1</span></b></h4>
+<p>
+  
+  
+      
+  
+  
+  
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+
+
+
+  
+  
+  
+
+<table>
+   
+  
+  
+  
+  
+ <div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Tenses</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Verbs</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Auxiliary verbs and tenses</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Auxiliary verbs and negatives</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Auxiliary verbs and questions</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Auxiliary verbs and short answers</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Parts of speech and meaning verb, adjective, noun , or adverb?</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Word formation</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Countries</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Contact details</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Making conversation</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Where things are</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Numbers and statistics</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Contact details</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>A world in family</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>Keep the conversation going</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>Worlds apart</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>An informal letter</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div> 
+  
+  
+    </tbody>
+</table>
+  
+  
+  
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+article table {
+  min-width: 70%;
+  margin: 0 auto;
+  border: 0;
+  overflow: hidden;
+  font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article table td {
+  padding: 20px 25px;
+  border: seagreen;
+  border-left-width: 0;
+  border-top: 0;
+  vertical-align: middle;
+  border-left-width: 1px;
+     
+      color: black;
+      font-size: larger;
+}
+
+
+
+
+
+
+table {
+border: 1px solid #ccc;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+table-layout: auto;
+}
+
+table caption {
+font-size: 1.5em;
+margin: .5em 0 .75em;
+}
+table tr {
+background-color: #fff;
+border: 1px solid #e1e5e9;
+padding: .35em;
+border-radius: 3px;
+}
+table thead tr:first-child {
+      border: 1px solid #0f82e6;
+  background-color: #0f82e6;
+  color: white;
+}
+table th,
+table td {
+padding: 1.625em;
+text-align: center;
+
+font-size: 14px;
+    font-family: var(--font-head);
+}
+
+table td:nth-child(4) {
+font-size: 18px;
+}
+
+table th {
+font-size: .85em;
+letter-spacing: .1em;
+text-transform: uppercase;
+
+
+}
+
+table tbody tr td .btn-invoice {
+background: #0f82e6;
+color: #FFF;
+font-size: 13px;
+padding: 10px 20px;
+border: 0;
+  font-family: var(--font-head);
+   text-decoration: none;
+    cursor: pointer;
+  
+
+box-shadow: 0 0 0px 1px rgb(0 0 0 / 27%);
+  border-radius: 10px;
+}
+
+
+
+
+.btn-invoice1 {
+background: #0f82e6;
+color: #FFF;
+font-size: 13px;
+padding: 10px 20px;
+border: 0;
+  font-family: var(--font-head);
+   text-decoration: none;
+   
+  
+
+box-shadow: 0 0 0px 1px rgb(0 0 0 / 27%);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.btn-invoice:hover {
+  background-color: #ad1717e8; /* Change to the desired hover color */
+}
+
+tbody tr:nth-child(even) {
+background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #fff;
+}
+
+@media screen and (max-width: 630px) {
+
+
+article table td:first-child {
+  border-left-width: 1px;
+  background-color: rgb(0, 0, 102);
+  color: white;
+}
+
+
+
+article table tr:nth-child(2n+1) td {
+  background-color: none;
+}
+
+
+
+table {
+  border: 0;
+}
+table caption {
+  font-size: 1.3em;
+}
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  padding: 0;
+}
+table tr {
+  border-bottom: 3px solid #e1e5e9;
+  display: block;
+  
+}
+table th,
+table td {
+  padding: 0.625em;
+}
+table td {
+      border-bottom: 1px solid #e1e5e9;
+  display: grid;
+  text-align: center;
+  justify-items: stretch;
+  color: #0f82e6;
+  text-transform: uppercase;
+  font-weight: bold;
+        border-left-width: 1px;
+      
+}
+table td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #656971;
+      margin-right: auto;
+          margin-bottom: 3px;
+}
+table td:last-child {
+  border-bottom: 0;
+}
+table td:nth-child(4) {
+  font-size: 0.8em;
+}
+</style>
+
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(1)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1lnX6pxwxOYWFmZxGbSJ-0_6ElcLe-dCW">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(2)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1OU7tiGjv9PKq912Da0d6dyePcSn27e_l">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(3)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1JrryiHYHjEP6283b8YzQkyhCx0BlV48r">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1Vug743g6QbRM0P8ALSCTQbiDllGrQHWs">Download ⏬</a></td>
+     <td data-label="Answers"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1S5SFabg_mzpsr5nmKX-6gBltHqAkMN5W">Download ⏬</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(1)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(2)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/poiazeuyrtoiaezpoiazeepo2154542.html?m=1"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/qskgdhjfdgkjiouerzo56486153.html?m=1"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/eazuyiueazruigrepokopazkea2465423.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/uytazeriuerpopqsdkjlzporkpzo.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 2">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 2</span></b></h4>
+<p>
+
+
+  
+  
+  
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 15px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+
+
+
+<table>
+
+
+    <div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Present Simple</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Adverbs of frequency</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Present Continuous</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">State verbs</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">The PASSIVE</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Present Simple and Present Continuous passive</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt; white-space: pre;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Jobs and professions</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Leisure activities</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Body and appearance</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Adjectives for describing people</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Clothes and accessories</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Talking about jobs</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Routine and free time</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Everyday activities</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">Describing people</li>
+<li dir="ltr" style="line-height: 1.2; margin-bottom: 0pt; margin-top: 0pt;" data-original-attrs="{&quot;role&quot;:&quot;presentation&quot;,&quot;style&quot;:&quot;&quot;}">What I&rsquo;m wearing</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>Who earns how much?</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>Charles, Prince of Wales</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>Letters and emails</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+
+  
+</tbody>
+</table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(4)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1vEldfE1ZxbC0x2HGXNyxXS87s0m5FJBo">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(5)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=140UbGYt1rv0N3cODzVF7JWAon0IFKscM">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(6)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1JrryiHYHjEP6283b8YzQkyhCx0BlV48r">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=17aOO55CSffZAxUJ5VwYy46ES2XjgpI4-">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(3)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(4)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+   <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/qsdazdzeddfdsfqsdzae.html?m=1"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/hgjhgtjryhrzer45ze45fdsdsqdz.html?m=1"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/gfdhg54t5re21fzz211fds15.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/fdsfdsvchjhgjgjy48re4ge44fe4.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p> 
+</div>
+
+<div class="tab1content" id="Unit 3">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 3</span></b></h4>
+<p>
+
+
+  <h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 15px; padding: 20px; text-align: center;">Table of Content</h2>
+
+
+
+<table>
+
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>PAST TENSES</li>
+<li>Past Simple</li>
+<li>Past Continuous</li>
+<li>Past Simple or Past Continuous</li>
+<li>used to</li>
+<li>Past Perfect</li>
+<li>Past tenses in the passive</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Rooms and furniture</li>
+<li>Geographical terms</li>
+<li>Feelings and emotions</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Daily routines</li>
+<li>Separable phrasal verbs</li>
+<li>Comparing places</li>
+<li>Likes and dislikes</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>The first time I fell in love</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>A Shakespearean tragedy</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>Telling a story (1)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+
+         
+  
+  
+  
+    
+      
+    
+  
+</tbody>
+</table>
+  
+  
+    
+  
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(7)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1KxREnI2cduQZmohdy3hGqYmo5Gr4d1a8">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(8)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1iMfdOKKN6ySF0S17-Q-gyWOF3PvxDC9z">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(9)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1V6VUQQda-_CvA4CoCMSkj8jTHlG_amOz">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1haBrMGBjv_sqzGXQHxQF0_4IhtA6IwjN">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(5)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(6)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+  <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/78653478988899555.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/4564523122689777.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/786457787987541666.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/456452115758999888.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 4">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 4</span></b></h4>
+<p>
+
+ 
+ 
+ 
+ 
+ 
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 15px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+<table>
+
+
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>have to</li>
+<li>have got to</li>
+<li>Modal and related verbs</li>
+<li>Obligation: should, ought to, and must</li>
+<li>Permission: can and be allowed to</li>
+<li>making requests: can, could, will, and would</li>
+<li>making offers: will and shall</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Family and growing up</li>
+<li>Baby equipment and parenting</li>
+<li>Transportation and travel</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Early years</li>
+<li>Changing meaning</li>
+<li>Places I have been</li>
+<li>Things I have done</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+
+      
+    
+  
+</tbody>
+</table>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+  
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(10)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1lVTaIoppMChJ1WDJwYBsDdRx09NrD78O">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(11)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1opsEWbW5Sjjymm5kxkmiX9pbcjMnTNSh">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(12)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=19I7PZPsmIuKrjpVN5XRq2fmMr90NRRS0">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1N5F0oiDt0V0oIlt9wsYOZxY1sLU3sUAF">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(7)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(8)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+     
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/78865455568569999.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/7868764545411.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/1458658969375710.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/44789655145412.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+</p>
+</div>
+
+
+
+<div class="tab1content" id="Unit 5">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 5</span></b></h4>
+<p>
+
+
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+<table>
+
+
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>FUTURE Forms</li>
+<li>will/ going to and the Present Continuous</li>
+<li>Future possibility: may/might/could</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Home improvements</li>
+<li>Hobbies and interests</li>
+<li>State and action verbs</li>
+<li>Urban problems</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Activities in progress</li>
+<li>My talents and skills</li>
+<li>Activities and their results</li>
+<li>Everyday problems</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+    
+      
+    
+  
+</tbody>
+</table>
+
+   
+  
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(13)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1H98-K6HHFi9icfUlwvISh6AFX7Bcfa9h">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(14)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1kBh0s0eIPBaHyIL_Vckkpw1bya2JufkN">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(15)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1OhqW8uYOMYcp71nxDBOeMfmbYe7MnCon">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=12dMHSUR2dYPQPxTHNia8R-a-QTbyYS6h">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(9)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(10)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+     
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/ghjytj23ty13441errrrrrgerggfd.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/bgthhrtyryertergdfgfd.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/hrthrt005f4gh251023468479ds.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/sqdvrgfdgrtegerzerscsf.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 6">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 6</span></b></h4>
+<p>
+
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 15px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+<table>
+
+
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>Information questions</li>
+<li>What . . . like? How . . .?</li>
+<li>Relative clauses</li>
+<li>Participles</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Food and drink</li>
+<li>Measurements and flavors</li>
+<li>Household gadgets</li>
+<li>Sports</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<p>&nbsp;</p>
+<ol>
+<li>General and specific things</li>
+<li>Myself, yourself</li>
+<li>What things are for</li>
+<li>Opinions and plans</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+  
+  
+    
+      
+    
+  
+</tbody>
+</table>
+
+
+
+   
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(16)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1nIeOU5Ueth0YeXZiW1kigwgm7gobRUXR">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(17)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=15nnFyN2VIS6w0rJzjtRUgnjV3hzMB_G8">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(18)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1KkCq_Gjt86jfwIiameGgw5bGQiZ3nzKl">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1Ov4ekItS8CgvXfQO_SLsTbQ2N-M94Kd2">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(11)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(12)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+   
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/1564daz21d84q3s5d418.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/qzdz1321ezfrdsfez.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/qsdazd5456ez4f1fzeee.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/156d1zad1321qsdza.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 7">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 7</span></b></h4>
+<p>
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+<table>
+
+<div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>The PRESENT PERFECT</li>
+<li>Present Perfect or Past Simple</li>
+<li>Present Perfect Simple passive</li>
+<li>Present Perfect Continuous</li>
+<li>Present Perfect Simple or Continuous</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Collocations with &ldquo;take&rdquo;</li>
+<li>Weather and climate</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<p>&nbsp;</p>
+<ol>
+<li>Future arrangements</li>
+<li>Planning the future</li>
+<li>Predictions and promises</li>
+<li>Possibility</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+
+
+</tbody>
+</table>
+
+
+
+   
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(19)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1-pYqOd5SBnoyLFM1Tlw4qD4EIsc1Cqjf">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(20)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1Xz5C6FEB6tpM3Gj5mOg3hCIMsIMRR2vp">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(21)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1YttmkITpkuoJkdmucZ2HEGlEB1LymC4a">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=11_U5VLuo9yFOEGrt3ldUdlPj_axIfxaL">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(13)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(14)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-7.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-7.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-7.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-7.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 8">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 8</span></b></h4>
+<p>
+
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+<table>
+
+
+
+
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<p>Verb patterns</p>
+</ol>
+
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Sickness and health</li>
+<li>Good manners</li>
+<li>Personal relationships</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Obligations</li>
+<li>Making deductions</li>
+<li>Polite requests</li>
+<li>Asking for agreement</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+         
+  
+  
+  
+    
+      
+    
+  
+</tbody>
+</table>
+
+
+   
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(22)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=15R-ueLLZD7_PSuCMLQEEF3cbA43iF2g5">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(23)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1xn5W2XCw8hyeY4ajj8fVRcy3L3BnfGxl">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(24)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1jVIX2jkMzTFqGluI8ycubua1PEPK2dkV">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1n6ci0bLdNO8Om3uNSe_-zA_qq9zFHm4C">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(15)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(16)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-8.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-8.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-8.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-8.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 9">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 9</span></b></h4>
+<p>
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+<table>
+
+
+
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>Conditionals</li>
+<li>Second conditional: improbable conditions</li>
+<li>First or second conditional?</li>
+<li>Third conditional: impossible conditions</li>
+<li>might/could have done</li>
+<li>should have done</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Science and tools</li>
+<li>Scientific facts</li>
+<li>Science experiments</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Things that are always true</li>
+<li>Describing a process</li>
+<li>Things that might happen</li>
+<li>Solving problems</li>
+<li>Planning activities</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+         
+  
+  
+  
+    
+      
+    
+  
+</tbody>
+</table>
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(25)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1y6KoQ-6Y4bSDuXdeOu2J-eJSNRM6-WxZ">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(26)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1lxtDe1KF9mYDsk7ZAX6bokjF3uoP_JJR">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(27)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1Oon1DtozrSH94sXrRi4mogzLyI3TF8ss">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1uUp-mX7b9BDUIF4e2D4GCA2J07Pz95mS">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(17)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(18)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><!----------------<a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-9.html"target="_blank">Study</a>--->🔒 </td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-9.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-9.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-9.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 10">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 10</span></b></h4>
+<p>
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+
+
+
+<table>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>Noun Phrases</li>
+<li>Articles</li>
+<li>Possessives</li>
+<li>all and every</li>
+<li>themselves and each other</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>Collocations with &ldquo;make&rdquo; and &ldquo;do&rdquo;</li>
+<li>Emotions</li>
+<li>Phrases for giving advice</li>
+<li>Personal characteristics</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Unlikely situations</li>
+<li>Giving advice</li>
+<li>Real and unreal situations</li>
+<li>Being specific</li>
+<li>Adding information</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+    
+      
+    
+  
+</tbody>
+</table>
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(28)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1lmElRTi054PA6A_2-oOozohI6JYB6SA3">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(29)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=18jaVkTmKIYidwiXvxiav41Sje7wGAiP2">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(30)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1Xzaoch5AO9dVv9t1kKIG9_S4uI4nJ_wT">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1bdmYSl4ynJ66zn1urOw_nP42Jmm53b3O">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(19)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(20)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><!----------------<a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-10.html"target="_blank">Study</a>--->🔒 </td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-10.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-10.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-10.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 11">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 11</span></b></h4>
+<p>
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+
+
+
+<table>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>Probability in the present and future</li>
+<li>Asking about possibilities</li>
+<li>Probability in the past</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+<ol>
+<li>The natural world</li>
+<li>Adjectives to describe places</li>
+<li>Environmental disasters</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Talking about events at given times</li>
+<li>Setting the scene for a story</li>
+<li>Interrupted actions</li>
+<li>Events in the past</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+  
+  
+  
+    
+      
+    
+  
+</tbody>
+</table>
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(31)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1OWt_6sdTgg2jLI0pBSOHd46OxM2Hp33x">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(32)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1LvyLQ0B13qcCJxfa5RpT3h0tjoH-06dJ">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(33)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1u_HYFQEyrr9CHYBHwW7NiUM7qyy-oVNa">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=14i3yKK9V1NyVXUMeQhvQmOIrhiF-BSYY">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(21)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(22)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><!----------------<a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-11.html"target="_blank">Study</a>--->🔒 </td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-11.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-11.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-11.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+</p>
+</div>
+
+<div class="tab1content" id="Unit 12">
+<h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Unit 12</span></b></h4>
+<p>
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Table of Content</h2>
+
+
+
+
+
+
+
+<table>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Grammar</div>
+<div class="accordion1-content">
+<ol>
+<li>Reported speech and thought</li>
+<li>Reporting verbs</li>
+<li>Reported questions</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Vocabulary</div>
+<div class="accordion1-content">
+
+<ol>
+<li>Visual arts</li>
+<li>Travel adjectives</li>
+<li>Common English idioms</li>
+<li>Storytelling devices</li>
+</ol>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Functional Language</div>
+<div class="accordion1-content">
+<ol>
+<li>Describing sequences of past events</li>
+<li>Describing new experiences</li>
+<li>Telling a story</li>
+<li>Putting events in order</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="accordion1-container">
+<div class="accordion1">
+<div class="accordion1-item">
+<div class="accordion1-header">Listening</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Speaking</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Reading</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+<div class="accordion1-item">
+<div class="accordion1-header">Writing</div>
+<div class="accordion1-content">
+<p>/</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    
+  
+</tbody>
+</table>
+
+
+
+
+
+
+<h2 style="background: rgb(15, 130, 230); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Language Input</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    <td data-label="">Grammar</td>
+    
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(34)" >View    👀</a></td>
+    <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1i1S88ZZdSBJwdajRmhFAYRZdJcSYsFXO">Download ⏬</a></td>
+
+    
+  </tr>
+  <tr>
+    <td data-label="">Vocabulary</td>
+   
+    <td data-label="View Online"><a class="btn-invoice"  onclick="openUnitModal(35)">View 👀</a></td>
+     <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1UVtnYHLH4UcnZ6PFV0RmXCQjBnEIb2A2">Download ⏬</a></td>
+
+    
+    
+  </tr>
+
+
+  <tr>
+    <td data-label="">Functional Language</td>
+ 
+    <td data-label="View Online"><a class="btn-invoice" onclick="openUnitModal(36)">View 👀</a></td>
+       <td data-label="Download PDF"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=1FzOIcu26W2d_2omfaGebQQnu8RZljDyT">Download ⏬</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Homework</td>
+
+         <td data-label="Download Homework"><a class="btn-invoice" href="https://drive.google.com/uc?export=download&amp;id=13GVa4BtWsPVdwHwPsDKTwr3AiKD7-w1J">Download ⏬</a></td>
+     <td data-label="Answers"><a   >🔒</a></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td data-label="">Exercises / Games</td>
+
+    <td data-label="Exercises"><a class="btn-invoice"  onclick="openTextModal(23)">Practice 📝</a></td>
+         <td data-label="Games"><a class="btn-invoice"  onclick="openTextModal(24)">Play 🕹</a></td>
+  </tr>
+  
+  
+  
+  
+  
+</tbody>
+</table>
+
+
+
+
+
+
+<h2 style="background: #0f82e6; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px; box-sizing: content-box; color: white; font-family: var(--font-head); font-size: 2em; line-height: 1.4em; margin: 1.7em 0px 20px; padding: 15px; text-align: center;">Skills</h2>
+
+<body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  <tr>
+    
+   
+    
+    
+    
+    
+    <td data-label="">Listening</td>
+    
+ 
+    <td data-label=""><!----------------<a class="btn-invoice" href="https://www.unsclass.tk/p/listening-unit-12.html"target="_blank">Study</a>--->🔒 </td>
+  </tr>
+  <tr>
+    <td data-label="">Speaking</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/speaking-unit-12.html"target="_blank">Study</a></td>
+    
+  </tr>
+  <tr>
+    <td data-label="">Reading</td>
+ 
+  
+       <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/reading-unit-12.html"target="_blank">Study</a></td>
+  </tr>
+  <tr>
+    <td data-label="">Writing</td>
+
+
+         <td data-label=""><a class="btn-invoice" href="https://www.unsclass.tk/p/writing-unit-12.html"target="_blank">Study</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+var i, tab1content, tab1links;
+tab1content = document.getElementsByClassName("tab1content");
+for (i = 0; i < tab1content.length; i++) {
+  tab1content[i].style.display = "none";
+}
+tab1links = document.getElementsByClassName("tab1links");
+for (i = 0; i < tab1links.length; i++) {
+  tab1links[i].className = tab1links[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+</script>
+ 
+</body>
+</html> 
+</p>
+  </div>
+ 
+  
+  <div class="panel" id="three-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">UPDATES</span></b></h4></div>
+    <p><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+padding: 20px;
+background-color: #f44336;
+color: white;
+opacity: 1;
+transition: opacity 0.6s;
+margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.closebtn:hover {
+color: black;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="alert warning">
+<span class="closebtn">&times;</span>  
+<strong>UPDATES: </strong> </div>   <h4></h4>
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function(){
+  var div = this.parentElement;
+  div.style.opacity = "0";
+  setTimeout(function(){ div.style.display = "none"; }, 600);
+}
+}
+</script>
+
+</body>
+</html>
+
+      
+           
+      
+      
+      
+      
+      
+      
+    </p>
+  </div>
+  
+  
+<div class="panel" id="four-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">SCHEDULE</span></b></h4></div>
+    
+
+            
+
+
+
+
+<style>.w3-border-blue, .w3-hover-border-blue:hover {
+  border-color: #2196F3!important;
+}
+.w3-pale-blue, .w3-hover-pale-blue:hover {
+  color: #000!important;
+  background-color: #ddffff!important;
+}
+
+.w3-leftbar {
+  border-left: 6px solid #ccc!important;
+}
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.w3-container, .w3-panel {
+  padding: 0.01em 16px;
+}
+
+.w3-border-blue, .w3-hover-border-blue:hover {
+  border-color: #2196F3!important;
+}
+</style>
+
+
+
+<div>
+  <p></p>
+  
+
+ 
+  
+</div>
+
+
+
+
+
+
+
+<table>
+
+
+<style>
+      .tablet {
+          display: table;
+          width: -webkit-fill-available;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          overflow: hidden; /* Ensures border-radius is applied to child elements */
+      }
+
+      .row {
+          display: table-row;
+      }
+
+      .headert {
+          display: table-header-group;
+          font-weight: bold;
+          background-color: #2c7bfe;
+          color: white;
+      }
+
+      .cell {
+          display: table-cell;
+          padding: 5px;
+          border: 1px solid #ddd;
+          text-align: center;
+        color:black;
+      }
+
+      .row:not(.headert):nth-child(even) {
+          background-color: white;
+      }
+
+      .row:not(.headert):nth-child(odd) {
+          background-color: #d3d3d35e;
+      }
+  </style>
+
+
+
+
+<h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">First (1st) Month</h2>
+
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">1</div>
+          <div class="cell">16/11/2023</div>
+          <div class="cell">09:00 - 11:00</div>
+          <div class="cell">
+          ✅
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">2</div>
+          <div class="cell">23/11/2023</div>
+          <div class="cell">09:00 - 11:00</div>
+          <div class="cell">
+✅
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">3</div>
+          <div class="cell">21/12/2023</div>
+          <div class="cell">09:00 - 11:00</div>
+          <div class="cell">✅</div>
+      </div>
+      <div class="row">
+          <div class="cell">4</div>
+          <div class="cell">29/12/2023</div>
+          <div class="cell">14:00 - 16:00</div>
+          <div class="cell">✅</div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  
+  
+<h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Second (2nd) Month</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">5</div>
+          <div class="cell">4/1/2024</div>
+          <div class="cell">09:00 - 11:00</div>
+          <div class="cell">
+         ✅
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">6</div>
+          <div class="cell">11/1/2024</div>
+          <div class="cell">09:00 - 11:00</div>
+          <div class="cell">
+        ✅
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">7</div>
+          <div class="cell">8/2/2024</div>
+          <div class="cell">8:30 - 10:30</div>
+          <div class="cell">
+            ✅
+         </div>
+      </div>
+      <div class="row">
+          <div class="cell">8</div>
+          <div class="cell">15/2/2024</div>
+          <div class="cell">9:00 - 11:00</div>
+          <div class="cell">
+        ✅
+        </div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Third (3rd) Month</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">9</div>
+          <div class="cell">22/2/2024</div>
+          <div class="cell">9:00 - 11:00</div>
+          <div class="cell">
+          ✅
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">10</div>
+          <div class="cell">15/3/2024</div>
+          <div class="cell">10:00 - 12:00</div>
+          <div class="cell">
+           ✅
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">11</div>
+          <div class="cell">22/3/2024</div>
+          <div class="cell">10:00 - 12:00</div>
+          <div class="cell"> ✅</div>
+      </div>
+      <div class="row">
+          <div class="cell">12</div>
+          <div class="cell">31/3/2024</div>
+          <div class="cell">12:00 - 14:00</div>
+          <div class="cell">✅</div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Fourth (4th) Month</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">13</div>
+          <div class="cell">4/4/2024</div>
+          <div class="cell">10:00 - 12:00</div>
+          <div class="cell">
+ ✅
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">14</div>
+          <div class="cell">15/8/2024</div>
+          <div class="cell">14:00 - 16:00</div>
+          <div class="cell">
+          ✅
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">15</div>
+          <div class="cell">22/8/2024</div>
+          <div class="cell">14:00 - 16:00</div>
+          <div class="cell">
+          ✅
+         </div>
+      </div>
+      <div class="row">
+          <div class="cell">16</div>
+          <div class="cell">29/8/2024</div>
+          <div class="cell">14:00 - 16:00</div>
+          <div class="cell">
+     ✅
+        </div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Fifth (5th) Month</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">17</div>
+          <div class="cell">4/9/2024</div>
+          <div class="cell">11:00 - 13:00</div>
+          <div class="cell">
+            ✅
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">18</div>
+          <div class="cell">11/9/2024</div>
+          <div class="cell">14:00 - 16:00</div>
+          <div class="cell">
+             ✅
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">19</div>
+          <div class="cell">18/10/2024</div>
+          <div class="cell">18:00 - 20:00</div>
+          <div class="cell">
+         
+                <a href="https://meet.google.com/gyp-ibjj-pcx" rel="nofollow" style="text-decoration-line: none;" target="_blank"><b><span style="color: #38761d; ">Join</span></b></a>
+         
+         </div>
+      </div>
+      <div class="row">
+          <div class="cell">20</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Sixth (6th) Month</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+          <div class="cell"style=" color: white; ">Session</div>
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Class</div>
+      </div>
+      <div class="row">
+          <div class="cell">21</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">
+         /
+          </div>
+      </div>
+      <div class="row">
+          <div class="cell">22</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">
+         /
+          
+          </div>
+      </div>
+      
+       <div class="row">
+          <div class="cell">23</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+      </div>
+      <div class="row">
+          <div class="cell">24</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+      </div>
+      
+      
+      <!-- Add more rows as needed -->
+  </div>
+  
+  
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Exam</h2>
+
+  <div class="tablet">
+      <div class="row headert">
+        
+          <div class="cell"style=" color: white; ">Date</div>
+          <div class="cell"style=" color: white; ">Time</div>
+          <div class="cell"style=" color: white; ">Exam</div>
+      </div>
+      <div class="row">
+        
+          <div class="cell">/</div>
+          <div class="cell">/</div>
+          <div class="cell">
+         /
+          </div>
+
+</table>
+
+
+
+
+    
+    <p></p>
+  </div>
+  <div class="panel" id="five-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">STUDENTS LIST</span></b></h4></div>
+    <p>    
+
+
+<table style="width: 100%; float: right;">
+<table>
+<tr>
+<th>Number</th>
+  <th>Full name</th>
+
+</tr>
+<tr>
+<th>1</th>
+  <td>Aridj BENABDELAZIZ</td>
+
+</tr>
+<tr>
+  <th>2</th>
+  <td>Hadil BENABDELAZIZ</td>
+
+</tr>
+
+</table>
+
+
+</body>
+</html></p>
+  </div>
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+    
+  <div class="panel" id="nine-panel">
+    <div class="panel-title"></div>
+    <p>    
+
+  <style>
+      .tablen {
+          display: table;
+          width: -webkit-fill-available;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          border-radius: 9px;
+        color: black;
+          overflow: hidden; /* Ensures border-radius is applied to child elements */
+          
+      }
+
+      .row {
+          display: table-row;
+      }
+
+      .headern {
+          display: table-row-group;
+          font-weight: bold;
+          background-color: lightblue;
+      }
+
+      .celln {
+          display: table-cell;
+          padding: 5px;
+          border: 1px solid #ddd;
+          text-align: center;
+      }
+
+      .row:not(.headern):nth-child(even) {
+          background-color: white;
+          
+      }
+
+     
+  </style>
+
+
+
+<h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Course Details</h2>
+
+
+
+  <div class="tablen">
+      <div class="headern">
+          
+      </div>
+      <div class="row">
+          <div class="celln"style=" font-weight: bold; ">Course Type</div>
+          <div class="celln">Extended</div>
+      </div>
+      <div class="row">
+          <div class="celln"style=" font-weight: bold; ">Class Type</div>
+          <div class="celln">Mini - Group</div>
+      </div>
+      <div class="row">
+          <div class="celln"style=" font-weight: bold; ">Sessions for one month</div>
+          <div class="celln">4 sessions / month</div>
+      </div>
+      <div class="row">
+          <div class="celln"style=" font-weight: bold; ">Time for one session</div>
+          <div class="celln">2 hours / session</div>
+      </div>
+  </div>
+  
+  <h2 style="background: rgb(0, 0, 102); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 0px; color: white; text-align: center; ">Payment Details</h2>
+  
+
+  <div class="tablen">
+      <div class="headern">
+          
+      </div>
+      <div class="row">
+          <div class="celln"style=" background-color: #2c7bfe; color: white;font-weight: bold; ">Student</div>
+          <div class="celln"style=" background-color: #2c7bfe; color: white;font-weight: bold; ">Course</div>
+          <div class="celln"style=" background-color: #2c7bfe; color: white; font-weight: bold;">Status</div>
+      </div>
+      <div class="row">
+          <div class="celln">Aridj BENABDELAZIZ</div>
+          <div class="celln">Full Course</div>
+          <div class="celln"style=" font-weight: bold;    color: forestgreen; ">PAID</div>
+      </div>
+      <div class="row">
+          <div class="celln">Hadil BENABDELAZIZ</div>
+          <div class="celln">Full Course</div>
+          <div class="celln"style=" font-weight: bold;     color: forestgreen;">PAID</div>
+      </div>
+  </div>
+
+</body>
+</html>
+
+</p>
+  </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="panel" id="six-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">HOMEWORK</span></b></h4></div>
+    
+    
+    
+    
+      <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+  <p><p>To streamline the submission of your homework (both language input and skills) and to ensure you receive your grades promptly, you MUST join&nbsp; the&nbsp;Google Classroom group. <strong>(B1 - MG8)</strong></p>
+<p><strong>Purpose of the Group:&nbsp;</strong></p>
+<ul>
+<li>View and Submit Homework (Language Input and Skills)</li>
+<li>Receive your grades</li>
+</ul>
+        
+  <p><strong>Please click on the button below to join:</strong></p>      
+        
+       
+  <style>
+      body5 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
+          margin: 0;
+      }
+
+      .google-classroom-logo {
+          width: 75px; /* Adjust the width as needed */
+          height: auto;
+      }
+
+      .join-button {
+             margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #18a05e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+      }
+  </style>
+</head>
+<body5>
+  <!-- Replace 'your-logo-url' with the actual URL of the Google Classroom logo -->
+  <img class="google-classroom-logo" src="https://play-lh.googleusercontent.com/w0s3au7cWptVf648ChCUP7sW6uzdwGFTSTenE178Tz87K_w1P1sFwI6h1CLZUlC2Ug=s160-rw" alt="Google Classroom Logo">
+
+  <!-- Replace 'your-join-link' with the actual URL to join the Google Classroom -->
+  <a class="join-button" href="https://classroom.google.com/c/NjM5ODg5MjE1ODYz?cjc=ksxhkch" target="_blank">JOIN</a>
+</body5>  
+    <br>
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p><script src="https://www.cognitoforms.com/f/seamless.js" data-key="rPs182gQ1E2Wg6w8JHaECg" data-form="14"></script></p>
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+   
+  
+  
+  <div class="panel" id="seven-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Pronunciation</span></b></h4></div>
+    <p>
+
+    <a id="yg-widget-0" class="youglish-widget" data-query="" data-lang="english" data-zones="all,us,uk,aus" data-components="8927" data-auto-start="0" data-bkg-color="theme_light"  rel="nofollow" href=""></a>
+<script async src="https://youglish.com/public/emb/widget.js" charset="utf-8"></script>
+      
+      
+
+
+</p>
+  </div>
+   
+  
+  <div class="panel" id="eight-panel">
+    <div class="panel-title"><h4 align="center" style="background: rgb(0, 0, 102); text-align: center;"><b><span face="&quot;Arial&quot;,sans-serif" style="color: white; font-size: 18pt; line-height: 107%;">Tools and Apps</span></b></h4></div>
+    <p>      
+    
+   
+     
+      <body class="no-scroll">
+<table>
+<thead>
+
+</thead>
+<tbody>
+  
+    
+   
+     <tr>
+  
+    <td data-label="">Google Classrom - Android</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://play.google.com/store/apps/details?id=com.google.android.apps.classroom"target="_blank">Download</a></td>
+  </tr>
+ 
+    <tr>
+    
+    
+    <td data-label="">Microsoft Edge - Windows</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://c2rsetup.officeapps.live.com/c2r/downloadEdge.aspx?platform=Default&source=EdgeStablePage&Channel=Stable&language=en&brand=M100">Download</a></td>
+  </tr>
+  <tr>
+    <td data-label="">PDF Extra Premium - Android</td>
+   
+
+     <td data-label=""><a class="btn-invoice" href="https://files.modyolo.com/PDF%20Extra/PDF_Extra-Premium-v10.8.2221_build_2221-Mod.apk">Download</a></td>
+    
+  </tr>
+  
+  
+  
+     <tr>
+  
+    <td data-label="">Reverso Translate - Android</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://files.modyolo.com/Reverso%20Translate%20and%20Learn/com.softissimo.reverso.context_1.8.6b11000089.apk">Download</a></td>
+  </tr>
+ 
+   
+  
+  
+   <tr>
+  
+    <td data-label="">Improve English Premium - Android</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://files.modyolo.com/Improve%20English/Knudge.me-Pro-v3.2.0_build_269-Mod.apk">Download</a></td>
+  </tr>
+ 
+   
+      
+      
+      
+      
+        <tr>
+  
+    <td data-label="">Functional Language Audios</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://play.google.com/store/apps/details?id=com.dkefe.app&hl="target="_blank">Download</a></td>
+  </tr>
+ 
+   <tr>
+  
+    <td data-label="">Rosetta Stone - Android</td>
+    
+ 
+    <td data-label=""><a class="btn-invoice" href="https://files.modyolo.com/Rosetta%20Stone/Rosetta_Stone-Pro-v8.21.0_build_82100005-Mod.apk">Download</a></td>
+  </tr>
+      
+     
+  
+  
+ 
+</tbody>
+</table>
+
+
+      
+      
+      
+      
+      
+    </p>
+  </div>
+  
+</div>
+</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- Hotjar Tracking Code for https://www.unsclass.tk -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3334782,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#logoutButton {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 45px;
+}
+
+#logoutButton:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
+
+/* Center the button horizontally and vertically */
+.center-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button0  {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.p  {
+text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  
+}
+
+</style>
+
+
+  <script>
+      // JavaScript to toggle accordion1 sections
+      const accordionItems = document.querySelectorAll('.accordion1-item');
+      const toggleAllButton3 = document.getElementById('toggleAll');
+      let isExpanded = false;
+      
+      accordionItems.forEach(item => {
+          const header = item.querySelector('.accordion1-header');
+          const content = item.querySelector('.accordion1-content');
+      
+          header.addEventListener('click', () => {
+              const computedStyle = window.getComputedStyle(content);
+      
+              if (computedStyle.display === 'none') {
+                  content.style.display = 'block';
+                  header.classList.add('active');
+              } else {
+                  content.style.display = 'none';
+                  header.classList.remove('active');
+              }
+          });
+      });
+      
+      toggleAllButton3.addEventListener('click', () => {
+          accordionItems.forEach(item => {
+              const content = item.querySelector('.accordion1-content');
+              const header = item.querySelector('.accordion1-header');
+       
+              
+              
+              
+              
+             if  (!isExpanded){
+                  content.style.display = 'none';
+                  header.classList.remove('active');
+                  toggleAllButton3.textContent = 'Expand All';
+              } else  {
+                  content.style.display = 'block';
+                  header.classList.add('active');
+                  toggleAllButton3.textContent = 'Collapse All';
+              }
+              
+              
+              
+            
+              
+              
+          });
+      
+          isExpanded = !isExpanded;
+      });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<style>
+
+
+/* Header Styles */
+/* Replace '.header-class' with the actual class name or '#header-id' with the actual ID name */
+header {
+  /* Add your header styles here */
+  z-index: 1001; /* Set a higher z-index value than the Quizizz overlay */
+}
+
+/* Footer Styles */
+/* Replace '.footer-class' with the actual class name or '#footer-id' with the actual ID name */
+.footer-class {
+  /* Add your footer styles here */
+  z-index: 1002; /* Set a higher z-index value than both the Quizizz overlay and header */
+}
+
+
+
+
+/* Unit Overlay Styles */
+.unit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  z-index: 999;
+  display: none;
+  
+  
+  
+  margin-bottom: 60px;
+}
+
+.unit-iframe {
+  width: 100%;
+  height: -webkit-fill-available;
+  border: none;
+  margin-top: 60px;   
+  background-color: white;
+  
+    overflow-y: scroll; 
+overflow-x: hidden; 
+}
+
+
+
+.unit-iframe1 {
+  width: 100%;
+  margin-top: 60px;
+  height: -webkit-fill-available;
+  border: none;
+  background-color: #dadada;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* Button Styles */
+.modal-button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #00adef;
+  color: white;
+  border: none;
+}
+
+/* Close Button Styles */
+.close-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1003;
+  display: none;
+  background-color: #00adef;
+  color: white;
+  border: none;
+}
+</style>
+</head>
+
+
+
+
+
+
+
+
+  
+<body>
+
+
+<!-- Containers for the Unit embed views (initially hidden) -->
+  
+  
+  
+<!-------------------------------------- Unit 1 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-1">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1lnX6pxwxOYWFmZxGbSJ-0_6ElcLe-dCW/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-2">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1OU7tiGjv9PKq912Da0d6dyePcSn27e_l/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-3">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1i3xNfvSXynrfhZQKL9VvEkdTc-5-HUVt/preview"></iframe>
+</div>
+
+  
+  
+  
+<!-------------------------------------- Unit 2 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-4">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1vEldfE1ZxbC0x2HGXNyxXS87s0m5FJBo/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-5">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/140UbGYt1rv0N3cODzVF7JWAon0IFKscM/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-6">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1JrryiHYHjEP6283b8YzQkyhCx0BlV48r/preview"></iframe>
+</div>
+
+<!-------------------------------------- Unit 3 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-7">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1KxREnI2cduQZmohdy3hGqYmo5Gr4d1a8/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-8">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1iMfdOKKN6ySF0S17-Q-gyWOF3PvxDC9z/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-9">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1V6VUQQda-_CvA4CoCMSkj8jTHlG_amOz/preview"></iframe>
+</div>
+
+  
+<!-------------------------------------- Unit 4 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-10">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1lVTaIoppMChJ1WDJwYBsDdRx09NrD78O/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-11">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1opsEWbW5Sjjymm5kxkmiX9pbcjMnTNSh/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-12">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/19I7PZPsmIuKrjpVN5XRq2fmMr90NRRS0/preview"></iframe>
+</div>
+  
+  
+  
+   
+<!-------------------------------------- Unit 5 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-13">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1H98-K6HHFi9icfUlwvISh6AFX7Bcfa9h/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-14">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1kBh0s0eIPBaHyIL_Vckkpw1bya2JufkN/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-15">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1OhqW8uYOMYcp71nxDBOeMfmbYe7MnCon/preview"></iframe>
+</div>
+    
+  
+       
+<!-------------------------------------- Unit 6 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-16">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1nIeOU5Ueth0YeXZiW1kigwgm7gobRUXR/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-17">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/15nnFyN2VIS6w0rJzjtRUgnjV3hzMB_G8/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-18">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1KkCq_Gjt86jfwIiameGgw5bGQiZ3nzKl/preview"></iframe>
+</div>
+    
+  
+  
+  
+  
+   
+       
+<!-------------------------------------- Unit 7 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-19">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1-pYqOd5SBnoyLFM1Tlw4qD4EIsc1Cqjf/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-20">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1Xz5C6FEB6tpM3Gj5mOg3hCIMsIMRR2vp/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-21">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1YttmkITpkuoJkdmucZ2HEGlEB1LymC4a/preview"></iframe>
+</div>
+    
+  
+  
+  
+    
+       
+<!-------------------------------------- Unit 8 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-22">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/15R-ueLLZD7_PSuCMLQEEF3cbA43iF2g5/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-23">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1xn5W2XCw8hyeY4ajj8fVRcy3L3BnfGxl/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-24">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1jVIX2jkMzTFqGluI8ycubua1PEPK2dkV/preview"></iframe>
+</div>
+    
+  
+  
+  
+  
+  
+    
+       
+<!-------------------------------------- Unit 9 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-25">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1y6KoQ-6Y4bSDuXdeOu2J-eJSNRM6-WxZ/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-26">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1lxtDe1KF9mYDsk7ZAX6bokjF3uoP_JJR/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-27">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1Oon1DtozrSH94sXrRi4mogzLyI3TF8ss/preview"></iframe>
+</div>
+    
+  
+  
+           
+<!-------------------------------------- Unit 10 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-28">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1lmElRTi054PA6A_2-oOozohI6JYB6SA3/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-29">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/18jaVkTmKIYidwiXvxiav41Sje7wGAiP2/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-30">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1Xzaoch5AO9dVv9t1kKIG9_S4uI4nJ_wT/preview"></iframe>
+</div>
+    
+  
+           
+<!-------------------------------------- Unit 11 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-31">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1OWt_6sdTgg2jLI0pBSOHd46OxM2Hp33x/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-32">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1LvyLQ0B13qcCJxfa5RpT3h0tjoH-06dJ/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-33">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1u_HYFQEyrr9CHYBHwW7NiUM7qyy-oVNa/preview"></iframe>
+</div>
+    
+  
+           
+<!-------------------------------------- Unit 12 ------------------------------------------------->
+<div class="unit-overlay" id="unit-container-34">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1i1S88ZZdSBJwdajRmhFAYRZdJcSYsFXO/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-35">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1UVtnYHLH4UcnZ6PFV0RmXCQjBnEIb2A2/preview"></iframe>
+</div>
+
+
+<div class="unit-overlay" id="unit-container-36">
+<iframe class="unit-iframe" src="https://drive.google.com/file/d/1FzOIcu26W2d_2omfaGebQQnu8RZljDyT/preview"></iframe>
+</div>
+    
+  
+  
+  
+  
+  
+  
+  
+<!-- Add similar divs for unit-container-2 to unit-container-5 -->
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+<!-- Containers for HTML text content (initially hidden) -->
+  
+  
+
+<!-------------------------------------- Unit 1 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-1">
+<div class="unit-iframe1">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MjM4MzE=/le', 'iframe1')">Question Tags 1</buttonnn>
+      <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MTc4Njc=/teens', 'iframe1')">Question Tags 2</buttonnn>
+      
+
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe1" src="" frameborder="0"></iframe>
+</body>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-2">
+<div class="unit-iframe">
+  <p>
+  
+  
+    
+    
+    
+    
+          
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#countries', 'iframe2')">Countries Vocabulary</buttonnn>
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-phrases/embed.html#countries', 'iframe2')">Countries Phrases</buttonnn>
+      
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe2" src="" frameborder="0"></iframe>
+</body>
+
+    
+    
+    
+
+    
+  
+  </p>
+</div>
+</div>
+
+<!-------------------------------------- Unit 2 ------------------------------------------------->
+
+<div class="unit-overlay" id="text-container-3">
+<div class="unit-iframe">
+  <p>
+    
+    
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/simple_present/31.htm', 'iframe3')">Simple Present</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_progressive/28.htm', 'iframe3')">Present Progressive</buttonnn>
+    <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MjM3MDI=/le', 'iframe3')">Stative verbs</buttonnn>
+    <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MTY0MjI=/le', 'iframe3')">Active and passive</buttonnn>
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/phrasal-verbs/embed.html', 'iframe3')">Phrasal Verbs</buttonnn>
+
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe3" src="" frameborder="0"></iframe>
+</body>
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+ 
+  
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-4">
+<div class="unit-iframe">
+  <p>
+  
+
+
+
+
+
+    
+    
+    
+<body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#jobs', 'iframe4')">jobs 1</buttonnn>
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#jobs2', 'iframe4')">jobs 2</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/jobs/embed.html', 'iframe4')">jobs Phrases</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-phrases/embed.html#clothes','iframe4')">Clothes Vocabulary</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/clothes-game/embed.html', 'iframe4')">Clothes Phrases</buttonnn>
+      
+
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe4" src="" frameborder="0"></iframe>
+</body>
+
+    
+    
+    
+  
+  
+  </p>
+</div>
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-------------------------------------- Unit 3 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-5">
+<div class="unit-iframe">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/simple_past/2/85.htm', 'iframe5')">Simple Past</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/simple_past/03.htm', 'iframe5')">Simple Past (To be)</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/simple_past/30.htm', 'iframe5')">Simple past questions 1</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/simple_past/31.htm', 'iframe5')">Simple past questions 2</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/past_progressive/02.htm', 'iframe5')">Past Continuous 1</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/past_progressive/04.htm', 'iframe5')">Past Continuous 2</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/past_progressive/50.htm', 'iframe5')">Past Continuous questions</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/perfect-tense-game/embed.html', 'iframe5')">Perfect Tenses</buttonnn>
+
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/past_perfect/50.htm', 'iframe5')">Past Perfect 1</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/past_perfect/76.htm', 'iframe5')">Past Perfect 2</buttonnn>
+     <buttonnn onclick="loadIframe('https://worksheet.books4languages.com/english/wp-admin/admin-ajax.php?action=h5p_embed&id=141', 'iframe5')">Used to</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_active_passive/33.htm', 'iframe5')">Past Passive</buttonnn>
+      
+
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe5" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-6">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#home', 'iframe6')">Home 1</buttonnn>
+        <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/comparatives/embed.html', 'iframe6')">Comparatives Places</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#home2', 'iframe6')">Home 2</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-phrases/embed.html#likes', 'iframe6')">Likes</buttonnn>
+      <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#buildings', 'iframe6')">Buildings</buttonnn>
+       <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#places', 'iframe6')">Places</buttonnn>
+    
+           
+
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe6" src="" frameborder="0"></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+<!-------------------------------------- Unit 4 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-7">
+<div class="unit-iframe">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MTYzNDI=/le', 'iframe7')">Modal Verbs Review</buttonnn>
+    <buttonnn onclick="loadIframe('//gamedata.britishcouncil.org/lep25_embed/MjM2ODA=/le', 'iframe7')">Permission and Obligation</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_2/modal_verbs/14.htm', 'iframe7')">Modal Verbs 1</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_2/modal_verbs/16.htm', 'iframe7')">Modal Verbs 2</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_2/modal_verbs/18.htm', 'iframe7')">Modal Verbs 3</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_2/modal_verbs/20.htm', 'iframe7')">Modal Verbs 4</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_2/modal_verbs/40.htm', 'iframe7')">Modal Verbs 5</buttonnn>
+
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe7" src="" frameborder="0"></iframe>
+</body>
+
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-8">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-english/embed.html#transport', 'iframe8')">Transport</buttonnn>
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-vocab/embed.html#places', 'iframe8')">Places</buttonnn>
+      
+    
+           
+
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe8" src="" frameborder="0"></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+     
+  
+      
+<!-------------------------------------- Unit 5 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-9">
+<div class="unit-iframe">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/future_1/09.htm', 'iframe9')">Future 1</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/future_1/20.htm', 'iframe9')">Future 2</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/future_1/40.htm', 'iframe9')">Future 3</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/future_1/55.htm', 'iframe9')">Future 4</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/future_1/87.htm', 'iframe9')">Future 5</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/going_to_future/02.htm', 'iframe9')">Going To 1</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/going_to_future/31.htm', 'iframe9')">Going To 2</buttonnn>
+   <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/going_to_future/53.htm', 'iframe9')">Going To 3</buttonnn>
+         <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/going_to_future/85.htm', 'iframe9')">Going To 4</buttonnn>
+        <buttonnn onclick="loadIframe('https://wordwall.net/embed/028f02e376214391ada4cd2f6a7fc9a8?themeId=1&templateId=5&fontStackId=0', 'iframe9')">Will and Going To</buttonnn>
+    
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe9" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-10">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     
+  
+      
+    
+           
+<buttonnn onclick="loadIframe('https://wordwall.net/embed/b86f0341b1d44ee1801fe29bd84b28ca?themeId=1&templateId=22&fontStackId=0', 'iframe10')">Hobbies</buttonnn>
+     <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/future-tense-game/embed.html', 'iframe10')">Future</buttonnn>
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe10" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+  
+  
+  
+  
+    <!-------------------------------------- Unit 6 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-11">
+<div class="unit-iframe">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_3/relative_clauses_whose/02.htm', 'iframe11')">Who or which?</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_3/relative_clauses_whose/05.htm', 'iframe11')">Who, which, whose? 1</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_year_3/relative_clauses_whose/04.htm', 'iframe11')">Who, which, whose? 2</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_beginners/questions_exercises/06_english_questions.htm', 'iframe11')">Question Words 1</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_beginners/questions_exercises/04_who_what_where_how.htm', 'iframe11')">Question Words 2</buttonnn>
+      <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/relative-pronouns/rp001-relative-pronouns.htm', 'iframe11')"> Relative Pronouns</buttonnn>
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/connectives/con006-what-which.htm', 'iframe11')">WHAT or WHICH</buttonnn>
+   <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/relative-pronouns/rp002-relative-clauses.htm', 'iframe11')">Relative Clauses</buttonnn>
+       
+     
+    
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe11" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-12">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     
+  
+      
+    
+           
+<buttonnn onclick="loadIframe('https://wordwall.net/embed/99b6c47a8ef94b959bac03a3e3df8cc6?themeId=1&templateId=5&fontStackId=0', 'iframe12')">How + adjective 1</buttonnn>
+    
+     <buttonnn onclick="loadIframe('https://wordwall.net/embed/14098c3a78794cc6888e5ef30ab5e898?themeId=1&templateId=5&fontStackId=0', 'iframe12')">How + adjective 2</buttonnn>
+
+    
+    <buttonnn onclick="loadIframe('https://wordwall.net/embed/4a8868d12f6c41f5b868b712a9c249bc?themeId=1&templateId=5&fontStackId=0', 'iframe12')">WH Questions</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/food/embed.html', 'iframe12')">Food</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/fast-vocab/embed.html#sports', 'iframe12')">Sports</buttonnn>
+    
+    
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe12" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+  
+  
+  
+  
+        <!-------------------------------------- Unit 7 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-13">
+<div class="unit-iframe">
+  <p>
+  
+    
+    
+    
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_perfect/71.htm', 'iframe13')">Present perfect 1</buttonnn>
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_perfect/80.htm', 'iframe13')">Present Perfect Test</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_perfect/70.htm', 'iframe13')">Present perfect text</buttonnn>
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_perfect/90.htm', 'iframe13')">Past Participle 1</buttonnn>
+     <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/present_perfect/91.htm', 'iframe13')">Past Participle 2</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/perfect_progressive/04.htm', 'iframe13')">Present Perfect Continuous 1</buttonnn>
+    
+         <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/perfect_progressive/06.htm', 'iframe13')">Present Perfect Continuous 2</buttonnn> 
+    
+      <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/perfect_progressive/54.htm', 'iframe13')"> since or for 1</buttonnn>
+    
+     <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/perfect_progressive/55.htm', 'iframe13')"> since or for 2</buttonnn>
+    
+    
+    
+    <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/perfect_progressive/81.htm', 'iframe13')">
+Present Perfect Continuous Test</buttonnn>
+  
+    
+    
+     <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/comparison_tenses/20.htm', 'iframe13')">Simple Past or Present Perfect? 1</buttonnn>
+    
+  
+        <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_tenses/comparison_tenses/21.htm', 'iframe13')">Simple Past or Present Perfect? 2</buttonnn>
+    
+    
+    
+           <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_active_passive/40.htm', 'iframe13')">  Present Perfect Passive 1</buttonnn>
+    
+    
+    
+           <buttonnn onclick="loadIframe('https://first-english.org/english_learning/english_active_passive/42.htm', 'iframe13')">  Present Perfect Passive 2</buttonnn>
+    
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe13" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+      
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-14">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     
+  
+      
+    
+           
+<buttonnn onclick="loadIframe('https://www.gamestolearnenglish.com/weather/embed.html', 'iframe14')">Weather</buttonnn>
+    
+     <buttonnn onclick="loadIframe('https://wordwall.net/embed/491d1a1bbcd34289b49adac98f52cba6?themeId=2&templateId=5&fontStackId=0', 'iframe14')">Take (collocations)
+</buttonnn>
+    
+       <buttonnn class="buttonnn" onclick="loadIframe('https://www.gamestolearnenglish.com/perfect-tense-game/embed.html', 'iframe14')">Perfect</buttonnn>
+
+  
+    
+    
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe14" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        <!-------------------------------------- Unit 8 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-15">
+<div class="unit-iframe">
+  <p>
+  
+
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi031.htm', 'iframe15')">Gerund or Infinitive 1</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi30.htm', 'iframe15')">Gerund or Infinitive 2</buttonnn>
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi028.htm', 'iframe15')">Gerund or Infinitive 3</buttonnn>
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe15" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-16">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     <buttonnn onclick="loadIframe('https://wordwall.net/embed/13eae387dfeb46a3bbd27c1af4682776?themeId=1&templateId=36&fontStackId=0', 'iframe16')">Restaurant Manners
+
+</buttonnn>
+    
+       <buttonnn class="buttonnn" onclick="loadIframe('https://wordwall.net/embed/bc19ff7edfb8420ea032acd08db091f1?themeId=1&templateId=2&fontStackId=0', 'iframe16')">My relationships
+</buttonnn>
+
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe16" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+  
+  
+  
+      
+        <!-------------------------------------- Unit 8 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-17">
+<div class="unit-iframe">
+  <p>
+  
+
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi031.htm', 'iframe17')">Gerund or Infinitive 1</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi30.htm', 'iframe17')">Gerund or Infinitive 2</buttonnn>
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi028.htm', 'iframe17')">Gerund or Infinitive 3</buttonnn>
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe17" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-18">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     <buttonnn onclick="loadIframe('https://wordwall.net/embed/13eae387dfeb46a3bbd27c1af4682776?themeId=1&templateId=36&fontStackId=0', 'iframe18')">Restaurant Manners
+
+</buttonnn>
+    
+       <buttonnn class="buttonnn" onclick="loadIframe('https://wordwall.net/embed/bc19ff7edfb8420ea032acd08db091f1?themeId=1&templateId=2&fontStackId=0', 'iframe18')">My relationships
+</buttonnn>
+
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe18" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+      
+        <!-------------------------------------- Unit 9 ------------------------------------------------->
+<div class="unit-overlay" id="text-container-19">
+<div class="unit-iframe">
+  <p>
+  
+
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+      <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi031.htm', 'iframe19')">Gerund or Infinitive 1</buttonnn>
+    
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi30.htm', 'iframe19')">Gerund or Infinitive 2</buttonnn>
+    
+    <buttonnn onclick="loadIframe('https://english-grammar.at/online_exercises/gerund-infinitive/gi028.htm', 'iframe19')">Gerund or Infinitive 3</buttonnn>
+    
+    
+  </div>
+  <!-- The iframe element -->
+  <iframe id="iframe19" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+  </p>
+</div>
+</div>
+
+
+
+<div class="unit-overlay" id="text-container-20">
+<div class="unit-iframe">
+  <p>
+  
+    
+    <body>
+  <!-- Container for buttonnns -->
+  <div id="buttonnn-container">
+    
+    
+     <buttonnn onclick="loadIframe('https://wordwall.net/embed/13eae387dfeb46a3bbd27c1af4682776?themeId=1&templateId=36&fontStackId=0', 'iframe20')">Restaurant Manners
+
+</buttonnn>
+    
+       <buttonnn class="buttonnn" onclick="loadIframe('https://wordwall.net/embed/bc19ff7edfb8420ea032acd08db091f1?themeId=1&templateId=2&fontStackId=0', 'iframe20')">My relationships
+</buttonnn>
+
+
+    
+  </div>
+  <!-- The iframe element -->
+ <iframe id="iframe20" src="" frameborder="0" allowfullscreen></iframe>
+</body>
+
+
+  </p>
+</div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+<!-- Close button (fixed to the bottom-right corner) -->
+<button class="close-button modal-button" onclick="closeUnitModal()">Close</button>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+          <script type="text/javascript">
+          const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+const itemToggle = this.getAttribute('aria-expanded');
+
+for (i = 0; i < items.length; i++) {
+  items[i].setAttribute('aria-expanded', 'false');
+}
+
+if (itemToggle == 'false') {
+  this.setAttribute('aria-expanded', 'true');
+}
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
+      </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+const closeButtons = document.querySelectorAll('.close-button');
+const overlays = document.querySelectorAll('.unit-overlay');
+
+function openUnitModal(index) {
+  overlays[index - 1].style.display = 'block';
+  closeButtons.forEach((button) => {
+    button.style.display = 'block';
+  });
+}
+
+function openTextModal(index) {
+  // Hide all unit overlays
+  overlays.forEach((overlay) => {
+    overlay.style.display = 'none';
+  });
+
+  // Show the text content overlay
+  document.getElementById(`text-container-${index}`).style.display = 'block';
+
+  // Show the close button
+  closeButtons.forEach((button) => {
+    button.style.display = 'block';
+  });
+}
+
+function closeUnitModal() {
+  overlays.forEach((overlay) => {
+    overlay.style.display = 'none';
+  });
+  closeButtons.forEach((button) => {
+    button.style.display = 'none';
+  });
+}
+</script>
+</body>
+</html>
+
+
+
+ <script>
+      function loadIframe(src, iframeId) {
+          document.getElementById(iframeId).src = src;
+      }
+  </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6423756b31ebfa0fe7f53b8f/1gsl85b3q';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+
+
